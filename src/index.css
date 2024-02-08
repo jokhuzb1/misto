@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1, h2, h3, h4, p {
+  @apply font-Leauge
+}
+
+.icon {
+  @apply tracking-widest text-2xl  ml-1 lg:ml-5
+}
+
+.card-title {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white py-3 px-4 shadow-2xl uppercase text-center rounded-md
+}
+
+.active {
+  @apply transition-all ease-in delay-100 border-b-2 border-black 
+}
+
+.size {
+  @apply px-2 mx-1 bg-grwhite text-lightblack
+}
+
+.carousel-img {
+  @apply px-3 pb-2 min-h-24
+}
+
+.payment-img>img {  
+  @apply h-5 mx-2 object-scale-down
+}
+
+.footer>ul>li {
+  @apply m-2 font-thin text-sm
+}
+
+.footer>ul>h1 {
+  @apply m-2 my-5 capitalize
+}
+
+.product-img {
+  @apply object-fill mb-2
+}
+
+.cardStyle {
+  @apply mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center
+}
+
+.listView {
+  @apply grid md:grid-cols-2 items-center sm:grid-cols-1
+}
+
+.listView>.list {
+  @apply flex
+}
+
+.card-btn {
+  @apply bg-lightblack text-white inline-block w-full m-2 font-Leauge
+}
+
+.mobile>li {
+  @apply m-3 uppercase font-bold
+}
+
+.btn-cart {
+  @apply border rounded-full px-3 py-1 m-1 cursor-pointer
+}
+
+.dark-bg {
+  @apply hover:bg-gray-200 p-3
+}
+.btn>button{
+  @apply bg-gray-200 bg-opacity-50 text-gray-600
+}
+/* width */
